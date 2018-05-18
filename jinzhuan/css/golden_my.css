@@ -1,0 +1,164 @@
+/* CSS Document */
+body{background: #fff; color: #000;}
+a{color: #000;}
+a:hover{color: #0993e5;}
+.jz_wrap{width:1200px; height: auto; overflow: hidden; clear: both; margin: 0px auto;}
+.jz_top{height: 99px; width: 1200px; margin: 0px auto;}
+.jz_logo{width:236px; height: 99px; float: left; _display: inline;}
+.jz_nav{float: left; _display: inline; margin-left: 28px;}
+.jz_nav ul li{position: relative; float: left; _display: inline; width: 128px; line-height: 99px; font-size: 18px; text-align: center;}
+.jz_nav ul li.jz_navon .jz_nav_top a{color: #057fc8;}
+/*.jz_nav ul li .jz_nav_top a{color: #010101;}*/
+.jz_topright{float: right; _display: inline; line-height: 99px;}
+.jz_topright span{font-size: 14px; text-align: right; margin-left: 16px; float: left; _display: inline;}
+.jz_nav_topmenu{display: none; z-index:9990; position: absolute; left: 0; top:99px; right: 0; background: #fff;}
+.jz_nav_topmenu .on{background: #057fc8; color: #fff;}
+.jz_nav_topmenu .on a{display: block; color: #fff;}
+.jz_nav_topmenu a:hover{display: block; background: #057fc8; color: #fff;}
+.jz_nav_topmenu span{ height: 70px; text-align: center; line-height: 70px; display: block;}
+.jz_banner{background: url(../images/img_banner.jpg) top center no-repeat; height: 510px; overflow: hidden;}
+.slideBox{ width:100%; height:510px; overflow:hidden; position:relative; }
+.slideBox .bd{ position:relative; height:100%; z-index:0; height:510px;}
+.slideBox .bd li{ zoom:1; vertical-align:middle; height:510px;}
+.slideBox .bd li a{width:100%; height:510px; display: block;;}
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+.jz_title{font-size: 42px; text-align: center; height: 60px; line-height: 60px; color: #057fc8; margin-top: 20px;}
+.jz_stitle{font-size: 30px; text-align: center; height: 45px; line-height: 45px; color: #000;}
+.jz_titlewhite{color:#fff;}
+.jz_gc{ width:1198px; border:1px solid #057fc8; margin-top:60px;}
+.jz_gc .hd{ height:66px; line-height:66px; background:#fff;  position:relative; border-bottom:1px solid #057fc8;}
+.jz_gc .hd ul{width:1205px;}
+.jz_gc .hd ul li{ float:left; cursor:pointer; width:299px; height:66px; font-size:24px; text-align:center; line-height:66px; color:#057fc8; border-right:1px solid #057fc8; position:relative; text-indent:42px;}
+.jz_gc .hd ul li.on{ background:#057fc8; color:#fff;}
+.jz_gc .hd ul li.on span{background:url(../images/bg_gcon.jpg) no-repeat; position:absolute; width:311px; height:20px; left:-1px; top:-20px;}
+.jz_gc .hd ul li.jz_gc4.on span{background:url(../images/bg_gcon2.jpg) no-repeat; position:absolute; width:311px; height:20px; left:auto; right:-1px; top:-20px;}
+.jz_gc .hd ul li i{width:42px; height:42px; display:block; position:absolute; top:0; bottom:0; left:74px; margin:auto;}
+.jz_gc .hd ul li.jz_gc1 i{background:url(../images/icon_gc1.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc2 i{background:url(../images/icon_gc2.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc3 i{background:url(../images/icon_gc3.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc4 i{background:url(../images/icon_gc4.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc1.on i{background:url(../images/icon_gc1on.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc2.on i{background:url(../images/icon_gc2on.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc3.on i{background:url(../images/icon_gc3on.png) no-repeat;}
+.jz_gc .hd ul li.jz_gc4.on i{background:url(../images/icon_gc4on.png) no-repeat;}
+.jz_gc .bd .jz_gc_cont{font-size:20px; padding:20px; line-height:40px; height:auto; overflow:hidden; clear:both;}
+.jz_gc .bd .jz_gc_cont p{text-indent:2em;}
+.jz_gc .bd .jz_gc_cont p span{text-decoration:underline;}
+.mt40{margin-top:40px;}
+.jz_danwei{height:929px; background:url(../images/bg_danwei.jpg) top center no-repeat; overflow:hidden; clear:both;}
+.jz_dwmain{height:730px; background:#fff; margin-top:36px; font-size:20px;}
+.jz_dwmainL{width:564px; float:left; _display:inline; margin-top:24px; margin-left:40px;}
+.jz_dwmainR{width:554px; float:right; _display:inline; margin-right:40px; margin-top:30px;}
+.jz_dw_title{background:url(../images/bg_dwconner.jpg) left center no-repeat; font-size:20px; color:#057fc8; height:30px; line-height:30px; margin-top:10px; padding-left:36px; font-weight:bold; margin-bottom:3px;}
+.jz_dw_cont{height:auto; overflow:hidden; line-height:35px; padding-left:36px;}
+.jz_dw_cont .jz_dw_indent{text-indent:15px;}
+.jz_dwmainR .jz_dw_cont{padding-left:0;}
+.jz_fw{height:auto; overflow:hidden; clear:both; margin-top:30px;}
+.jz_fw ul{width:1230px;}
+.jz_fw ul li{width:379px; height:240px; float:left; _display:inline; margin-right:30px; position:relative;}
+.jz_fw ul li i{position:absolute; left:0; bottom:0; right:0; top:0; margin:auto; background:#000; opacity: .6;}
+.jz_fw ul li img{width:379px; height:240px;}
+.jz_fw ul li .jz_fw_main{position:absolute; left:0; bottom:0; right:0; top:0; margin:auto;}
+.jz_fw ul li .jz_fw_main .jz_fw_mtop{margin-top:35px; text-align:center;}
+.jz_fw ul li .jz_fw_main .jz_fw_mtop p{font-size:30px; color:#ffff00; line-height:50px; height:50px;}
+.jz_fw ul li .jz_fw_main .jz_fw_mbot{margin:20px 0 0 30px; text-align:left}
+.jz_fw ul li .jz_fw_main .jz_fw_mbot p{font-size:20px; color:#fff; line-height:30px; height:30px; overflow:hidden;}
+.jz_xm{height:1194px; background:url(../images/bg_xm.jpg) top center no-repeat; overflow:hidden; clear:both;}
+.jz_xmain{margin-top:30px; background:#fff; height:992px; padding:0 40px;}
+.jz_xmain ul li{height:auto; overflow:hidden; clear:both; border-top:1px solid #057fc8; margin-top:40px; padding-top:40px;}
+.jz_xmain ul li.jz_xmain_first{margin-top:0; border-top:0;}
+.jz_xmain ul li .jz_xmainImg{width:530px; height:250px;}
+.jz_xmainWord{width:550px;}
+.jz_xmain_title{font-size:30px; height:30px; line-height:30px; color:#057fc8; margin-top:10px;}
+.jz_xmain_cont{height:185px; overflow:hidden; font-size:20px; line-height:28px; margin-top:5px;}
+.jz_xmain_cont p{margin-top:5px;}
+.jz_bm{margin-top:30px; height:auto; overflow:hidden;}
+.jz_bm .jz_bm_left{width:880px; height:308px; float:left; _display:inline; background:url(../images/bg_mb.jpg) no-repeat; }
+.jz_bm .jz_bm_left p{padding:32px 60px 0 110px; color:#fff; font-size:20px; line-height:38px;}
+.jz_bm .jz_bm_right{width:293px; height:261px; float:right; _display:inline; background:url(../images/bg_fy.jpg) no-repeat;}
+.jz_bm .jz_bm_right p{padding:65px 30px 0 35px; color:#000; font-size:20px; line-height:38px;}
+.jz_contact{background:url(../images/bg_contact.jpg) top center no-repeat; height:466px;}
+.jz_tactmain{float:right; _display:inline; width:605px; font-size:20px; color:#fff; line-height:34px; margin-top:25px;}
+.jz_footer{height:193px; overflow:hidden; text-align:center; clear:both;}
+.jz_footer_nav{text-align:center;margin-top:60px; height:30px; line-height:30px;}
+.jz_footer_nav span{ margin:0 24px; font-size:18px;}
+.jz_footer_copy{text-align:center; font-size:14px; height:30px; line-height:30px; margin-top:5px;}
+.jz_list_sleft{width:255px; float: left; _display: inline; height: auto; overflow: hidden; margin-top: 40px;}
+.jz_list_bright{width:905px; float: right; _display: inline; height: auto; overflow: hidden; margin-top: 40px;}
+.jz_list_sdasai{width:255px; height: 110px;}
+.jz_list_sjinzhuan{width:255px; height: 136px; margin-top: 3px;}
+.jz_list_snav ul li{height: 69px; line-height: 69px; font-size: 24px; border-top: 1px dashed #057fc8; }
+.jz_list_snav ul li.first{border-top:0;}
+.jz_list_snav ul li a{ background: url(../images/bg_conner.jpg) 20px center no-repeat; display: block; padding-left: 40px;}
+.jz_list_snav ul li a:hover{color: #057fc8;}
+.jz_list_snav ul li.on a{ background: url(../images/bg_dwconner.jpg) 20px center no-repeat; color: #057fc8;}
+.jz_bright_title{height: auto; overflow: hidden; clear: both; margin-top: 40px; font-size: 30px; height:70px; line-height: 70px; font-weight: bold;  text-align: center;}
+.jz_bright_cont{height: auto; overflow: hidden; clear: both; font-size: 20px; line-height: 36px; margin-top: 16px;}
+.jz_bright_cont p{text-indent: 2em;}
+.jz_member_rt{margin-top: 18px; height: 52px; line-height: 52px; font-size: 30px; font-weight: bold; text-align: center;}
+.jz_member_srt{height: auto; overflow: hidden; font-size: 14px; color: #aaa; height: 25px; line-height: 25px; text-align: center;}
+.jz_member_contry{height: 66px; line-height: 66px; padding-top: 10px; border-top:1px solid #030000; margin-top: 15px; font-size: 30px; font-weight: bold;}
+.jz_member{height: auto; overflow: hidden; clear: both; margin-top: 10px;}
+.jz_member ul li{height: 225px; overflow: hidden; clear: both; margin-bottom: 30px;}
+.jz_member ul li img{width:194px; height: 225px; float: left; _display: inline;}
+.jz_member ul li .jz_mem_right{width: 680px; float: right; _display: inline;  height: 225px;}
+.jz_mem_right div{font-size: 20px; line-height: 35px;}
+.jz_mem_right div span{font-weight: bold; }
+.jz_fenye{height: 36px; overflow: hidden; clear: both; margin-top: 40px;}
+.jz_fenye ul{position: relative; float: left; left: 50%;}
+.jz_fenye ul li{position: relative; float: left; right: 50%; width: 34px; height: 34px; border: 1px solid #aaa; margin: 0 10px; text-align: center; line-height: 34px; font-size: 16px;}
+.jz_fenye ul li a{color: #0282cd; display: block;}
+.jz_fenye ul li.on a{background: #0282cd; color: #fff;}
+.jz_fenye ul li.jz_fenyepn{background: #fdfdfd; width:78px;}
+.jz_fenye ul li.jz_fenyepn a{color: #aaa;}
+.jz_news_right{width:330px; height: auto; overflow: hidden; float: right; _display: inline; margin-top: 40px;}
+.jz_news_left{width:830px; height: auto; overflow: hidden; float: left; _display: inline; margin-top: 40px;}
+.jz_news_so{height: auto; overflow: hidden; clear: both;}
+.jz_news_so .jz_news_sotext{width:260px; border: 1px solid #057fc8; float: left; _display: inline; height: 38px; line-height: 38px; font-size: 18px;}
+.jz_news_so .jz_news_sobut{width:64px; border: 0; background: #057fc8; float: left; _display: inline; height: 40px; line-height: 38px; font-size: 18px; color: #fff;}
+.jz_so_top{height: auto; overflow: hidden; clear: both; margin-top: 20px;}
+.jz_so_top .jz_soch{height: 44px; line-height: 44px; font-size: 30px; font-weight: bold;}
+.jz_so_top .jz_soen{height: 23px; line-height: 23px; font-size: 16px; color: #aaa;}
+.jz_rightlist ul li{height: 49px; border-bottom: 1px dashed #aaa; overflow: hidden; background: url(../images/icon_enter.png) right center no-repeat;}
+.jz_rightlist ul li i{width:30px; height: 30px; float: left; margin-top: 10px; text-align: center; line-height: 30px; color: #0993e5; font-style: normal; font-size: 18px;}
+.jz_rightlist ul li.num i{background: #0993e5; color: #fff;}
+.jz_rightlist ul li span{float: left; width: 240px; margin-left: 12px; font-size: 18px; overflow: hidden; line-height:49px ; white-space: nowrap; text-overflow: ellipsis; }
+.jz_news_leftTitle{height: 70px; font-weight: bold; border-bottom: 1px solid #000; overflow: hidden; line-height: 70px; font-size: 30px;}
+.jz_news ul li{height: 180px; border-bottom:1px solid #aaa; overflow: hidden;}
+.jz_news ul li .jz_newsTitle{height: 40px; line-height: 40px; overflow: hidden; margin-top: 10px; font-size: 20px; font-weight: bold;}
+.jz_news ul li .jz_newsCot{height: 110px; overflow: hidden; margin-top: 5px;}
+.jz_news ul li .jz_newsCot .jz_newsImg{width:168px; height: 110px; float: left; _display: inline; margin-right: 30px;} 
+.jz_news ul li .jz_newsCot .jz_newsInfo{font-size: 20px; line-height: 30px; width: 630px; height: 90px; overflow: hidden;}
+.jz_news ul li .jz_newsCot .jz_newsTime{font-size:14px; color: #aaa; height: 20px; line-height: 20px; overflow: hidden; margin-top: 5px;}
+.jz_newdetlist ul li{height: 49px; border-bottom: 1px dashed #aaa; overflow: hidden; font-size: 18px; line-height: 49px; white-space: nowrap; text-overflow: ellipsis;}
+.jz_news_detitle{height: auto; overflow: hidden; text-align: center; border-bottom: 1px solid #000; font-size: 30px; font-weight: bold; padding: 17px 90px}
+.jz_news_detcont{height: auto; overflow: hidden; clear: both; margin: 15px 0; font-size: 20px; line-height: 35px;}
+.jz_news_detcont .jz_indent{text-indent:2em;}
+.jz_news_detcont img{display: block; margin: 0px auto;}
+.jz_news_detcont p{margin-top: 10px;}
+.jz_down_rtitle{height: 70px; text-align: center; line-height: 70px; border-bottom: 1px solid #000; margin-top: 40px; font-weight: bold; font-size: 30px;}
+.jz_down_cont ul li{height: 70px; line-height: 70px; border-bottom: 1px solid #aaa;}
+.jz_down_cont ul li span{font-size: 20px; width: 700px; overflow: hidden; float: left; _display: inline; white-space: normal; text-overflow: ellipsis;}
+.jz_down_cont ul li a{float: right; background: #057fc8; margin-top: 15px; width:96px; font-size: 20px; height: 36px; line-height: 36px; color: #fff; text-align: center; overflow: hidden;}
+.jz_matach{height: auto; overflow: hidden; clear: both;}
+.jz_matach .jz_mat_top{height: auto; overflow: hidden; clear: both; margin-top: 30px;}
+.jz_matach .jz_mat_top .jz_mat_top_title{font-size: 16px; font-weight: bold; height: 30px; line-height: 30px;}
+.jz_mat_top_cont{height: auto; overflow: hidden; margin-top: 10px; position: relative;}
+.jz_mat_top_cont .jz_mat_top_contT{font-size: 14px; height:40px; line-height: 20px; overflow: hidden; }
+.jz_mat_top_cont .jz_mat_top_contB{position: absolute; right: 0; bottom: 0; font-size: 14px; color:#057fc8; cursor: pointer;}
+.jz_matchmain ul li{height: auto; overflow: hidden; clear: both;}
+.jz_matchmain ul li .jz_matchLeft{width: 100px; height: 50px; line-height: 50px; color:#fff; font-size: 14px; margin-top: 40px; float: left; _display: inline; background: #ff9d1d; text-align: center; }
+.jz_matchmain ul li .jz_matchRight{height: auto; overflow: hidden; float: right; _display: inline; width:770px;}
+.jz_mrcont{margin-top: 40px; height: auto; overflow: hidden; clear: both;}
+.jz_mrcont .jz_mrcontT{ overflow: hidden; font-size: 16px; font-weight: bold; height: 22px; line-height: 22px;}
+.jz_mrcont .jz_mrcontB{height: all; overflow: hidden; clear: both;}
+.jz_mrcont .jz_mrcontB img{width: 168px; height: 110px; float: left; display: inline; margin-top: 14px;}
+.jz_mrcont .jz_mrcontB .jz_mrcontB_right{width: 590px; height: 110px; float: right; display: inline; margin-top: 9px;}
+.jz_mrcontB_right p{height: 88px; overflow: hidden; clear:both; font-size: 14px; line-height: 22px;}
+.jz_mrcontB_right span{display: block; font-size: 14px; color:#aaa; height: 22px; line-height: 22px; overflow: hidden;}

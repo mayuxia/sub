@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no" /> 
+<meta name="msapplication-tap-highlight" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" type="text/css" href="css/base_my.css" />
+<link rel="stylesheet" type="text/css" href="css/wrap_my.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/rem.js"></script>
+
+<title>2018金砖大赛</title>
+<script type="text/javascript">
+$(function(){
+	//banner
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		spaceBetween: 30,
+	});	
+	//查看更多
+	$(".jzwp_indexdw ul li:gt(1)").hide();
+	$(".jzwp_more a").click(function(){
+		$(".jzwp_indexdw ul li:gt(1)").show();
+		$(this).hide();
+	})
+})
+
+</script>
+</head>
+<body>
+<div class="jzwp_top">
+	<img src="images/logo.jpg" />
+	<div class="jzwp_top_tel">联系电话：82895227</div>
+</div>
+<div class="ww_topimg">
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/tmp/tmp4.jpg" /></div>
+            <div class="swiper-slide"><img src="images/tmp/tmp4.jpg" /></div>
+            <div class="swiper-slide"><img src="images/tmp/tmp4.jpg" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="jzwp_word">
+	2018 一带一路暨金砖国家技能发展与技术创新大赛之3D打印、智能制造、模具智能制造、移动机器人、工业机器人、VR 设计大赛
+</div>
+<div class="jzwp_nav">
+	<ul>
+		<li><a href="#"><img src="images/icon_load1.png" />3D打印</a></li>
+		<li><a href="#"><img src="images/icon_load2.png" />智能制造</a></li>
+		<li><a href="#"><img src="images/icon_load3.png" />模具智能制造</a></li>
+		<li><a href="#"><img src="images/icon_load4.png" />移动机器人</a></li>
+		<li><a href="#"><img src="images/icon_load5.png" />工业机器人</a></li>
+		<li><a href="#"><img src="images/icon_load6.png" />VR设计</a></li>
+	</ul>
+</div>
+<div class="jzwp_indextitle">3D打印</div>
+<div class="jzwp_down_cont">
+	<ul>
+		<li>
+			<span>金砖+大赛3D打印等赛项工作流程</span>
+			<a href="#">下载</a>
+		</li>
+		<li>
+			<span>金砖+大赛—3D打印造型技术赛项技术大赛技术规程(高校组中文版)</span>
+			<a href="#">下载</a>
+		</li>
+		<li>
+			<span>金砖+大赛—3D打印造型技术赛项技术大赛技术规程(中职组中文版)</span>
+			<a href="#">下载</a>
+		</li>
+	</ul>
+</div>
+<div class="jzwp_indextitle">智能制造</div>
+<div class="jzwp_down_cont">
+	<ul>
+		<li>
+			<span>金砖+大赛3D打印等赛项工作流程</span>
+			<a href="#">下载</a>
+		</li>
+	</ul>
+</div>
+<div class="jzwp_footer">
+	<p>版权所有：中国机械职业网</p>
+	<p>技术支持：北京企学研教育科技研究院</p>
+</div>
+</body>
+</html>

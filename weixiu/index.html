@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" type="text/css" href="css/base_my.css" />
+<link rel="stylesheet" type="text/css" href="css/main_my.css" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    //轮播图
+    $(".slideBox").slide({mainCell:".bd ul",effect:"left",autoPlay:true});
+
+    //切换
+    $(".repair_find_ltop .hd ul li").hover(function(){
+        var thisId = $(this).attr("data-id");
+        $(".repair_find_ltop ul li").removeClass("on");
+        if(thisId>0 && thisId<6){
+            $("#bd_top1").show();
+            $("#bd_top2").hide();
+
+        }else if(thisId>5 && thisId<11){
+            $("#bd_top1").hide();
+            $("#bd_top2").show();
+        }
+        $(".repair_find_ltop .bd ul").hide();
+        $(this).addClass("on");
+        $("#bd_"+thisId).show();
+    })
+
+
+
+})
+</script>
+<title></title>
+
+</head>
+<body>
+<div class="repair_top">
+    <div class="repair_nav">
+        <img src="images/logo.jpg" class="repair_logo" />
+        <ul>
+            <li class="on"><a href="#">首页</a></li>
+            <li><a href="#">装修设计</a></li>
+            <li><a href="#">维修</a></li>
+            <li><a href="#">家政</a></li>
+            <li><a href="#">效果图</a></li>
+            <li><a href="#">真实案例</a></li>
+            <li><a href="#">商家入驻</a></li>
+        </ul>
+    </div>
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <ul><li></li><li></li><li></li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li style="background: url(images/tmp/1.jpg) top center no-repeat"><a href="#"></a></li>
+                <li style="background: url(images/tmp/1.jpg) top center no-repeat"><a href="#"></a></li>
+                <li style="background: url(images/tmp/1.jpg) top center no-repeat"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="repair_index">
+    <div class="repair_linetitle">
+        <i></i>
+        <div class="repair_linetit_ch"><span class="repair_bgwhite">您可以从以下<span class="font38">分类</span>中直接查找</span></div>
+        <div class="repair_linetit_en"><span class="repair_bgwhite">CHOOSE THE TYPE OF SERVICE YOU NEED TO FIND</span></div>
+    </div>
+    <div class="repair_index">
+        <div class="repair_find_left">
+            <div class="repair_find_ltop slideTxtBox">
+                <div class="hd">
+                    <ul>
+                        <li class="repair_find_ltop_1 on" data-id="1">
+                            <i></i>
+                            <div>搬家服务</div>
+                            <p>Moving service</p>
+                        </li>
+                        <li class="repair_find_ltop_2" data-id="2">
+                            <i></i>
+                            <div>家政月嫂</div>
+                            <p>Moving service</p>
+                        </li>
+                        <li class="repair_find_ltop_3" data-id="3">
+                            <i></i>
+                            <div>维修安装</div>
+                            <p>Moving service</p>
+                        </li>
+                        <li class="repair_find_ltop_4" data-id="4">
+                            <i></i>
+                            <div>保洁开荒</div>
+                            <p>Moving service</p>
+                        </li>
+                        <li class="repair_find_ltop_5" data-id="5">
+                            <i></i>
+                            <div>便民服务</div>
+                            <p>Moving service</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bd" id="bd_top1">
+                    <ul id="bd_1" style="display: block">
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_2">
+                       <li><a href="#">2个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_3">
+                       <li><a href="#">3个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_4">
+                       <li><a href="#">4个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_5">
+                       <li><a href="#">5个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul>
+                        <li class="repair_find_ltop_6" data-id="6">
+                            <i></i>
+                            <div>二手回收</div>
+                            <p>Second-hand recycling</p>
+                        </li>
+                        <li class="repair_find_ltop_7" data-id="7">
+                            <i></i>
+                            <div>教育培训</div>
+                            <p>Education and training</p>
+                        </li>
+                        <li class="repair_find_ltop_8" data-id="8">
+                            <i></i>
+                            <div>摄影摄像</div>
+                            <p>Photography</p>
+                        </li>
+                        <li class="repair_find_ltop_9" data-id="9">
+                            <i></i>
+                            <div>商业服务</div>
+                            <p>business services</p>
+                        </li>
+                        <li class="repair_find_ltop_10" data-id="10">
+                            <i></i>
+                            <div>旅游 | 签证</div>
+                            <p>Traveling | Visa Service</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bd dn" id="bd_top2">
+                    <ul id="bd_6">
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_7">
+                       <li><a href="#">2个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_8">
+                       <li><a href="#">3个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_9">
+                       <li><a href="#">4个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                    <ul id="bd_10">
+                       <li><a href="#">5个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                       <li><a href="#">个人搬家</a></li>
+                       <li><a href="#">货运服务</a></li>
+                       <li><a href="#">长途搬家搬运</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="repair_find_right">
+            <ul>
+                <li><a href="#"><img src="images/img_index_zx.jpg"></a></li>
+                <li><a href="#"><img src="images/img_index_wx.jpg"></a></li>
+                <li><a href="#"><img src="images/img_index_bj.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="repair_indadv" style="background: url(images/tmp/2.jpg) top center no-repeat"></div>
+
+<div class="repair_index">
+    <div class="repair_notitle">
+        <div class="repair_linetit_ch">局部改造</div>
+        <div class="repair_linetit_en">1分钟完成需求表单，为您提供更精确的报价及服务</div>
+    </div>
+    <div class="repair_gaizao">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/tmp/3.jpg" />
+                    <p>墙面刷新</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/tmp/4.jpg" />
+                    <p>地面改造</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/tmp/5.jpg" />
+                    <p>为什么关键改造</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="repair_fuwu">
+    <div class="repair_notitle">
+        <div class="repair_linetit_ch">维修服务</div>
+        <div class="repair_linetit_en">报价必须更精准，杜绝多收项目费用</div>
+    </div>
+    <div class="repair_index repair_fwcont">
+        <ul>
+            <li>
+                <div class="repair_fwcontT">
+                    <div class="repair_fwcontTL">灯具电路<span>维修安装</span></div>
+                    <a href="#">More</a>
+                </div>
+                <div class="repair_fwcontI"><img src="images/tmp/6.jpg" /></div>
+                <div class="repair_fwcontB"><span>25</span>元起</div>
+            </li>
+            <li>
+                <div class="repair_fwcontT">
+                    <div class="repair_fwcontTL">灯具电路<span>维修安装</span></div>
+                    <a href="#">More</a>
+                </div>
+                <div class="repair_fwcontI"><img src="images/tmp/6.jpg" /></div>
+                <div class="repair_fwcontB"><span>25</span>元起</div>
+            </li>
+            <li>
+                <div class="repair_fwcontT">
+                    <div class="repair_fwcontTL">灯具电路<span>维修安装</span></div>
+                    <a href="#">More</a>
+                </div>
+                <div class="repair_fwcontI"><img src="images/tmp/6.jpg" /></div>
+                <div class="repair_fwcontB"><span>25</span>元起</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="repair_index">
+    <div class="repair_notitle">
+        <div class="repair_linetit_ch">家政服务</div>
+        <div class="repair_linetit_en">用一分钟了解您的需求 \ 极速获得三份报价 \ 严选格调服务团队</div>
+    </div>
+    <div class="repair_jz">
+        <ul>
+            <li><a href="#"><img src="images/tmp/7.jpg" /></a></li>
+            <li></li>
+            <li><a href="#"><img src="images/tmp/7.jpg" /></a></li>
+            <li></li>
+            <li></li>
+            <li><a href="#"><img src="images/tmp/7.jpg" /></a></li>
+            <li></li>
+            <li><a href="#"><img src="images/tmp/7.jpg" /></a></li>
+        </ul>
+    </div>
+</div>
+<div class="repair_footer">
+    <div class="repair_index">
+        <div class="repair_ftop">
+            <div class="repair_ftopL">
+                <a href="#">我有需求</a>
+                <a href="#">我有服务</a>
+            </div>
+            <div class="repair_ftopR">
+                <ul>
+                    <li>
+                        <img src="images/img_code.jpg" />
+                        <p>手机找服务下载APP</p>
+                    </li>
+                    <li>
+                        <img src="images/img_code.jpg" />
+                        <p class="repair_f">关注微信</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="repair_fbot">
+            <div class="repair_fbotT">
+                <span><a href="#">关于好好修</a></span>
+                <span>|</span>
+                <span><a href="#">用户协议</a></span>
+                <span>|</span>
+                <span><a href="#">帮助中心</a></span>
+                <span>|</span>
+                <span><a href="#">联系我们</a></span>
+                <span>|</span>
+                <span><a href="#">先行赔付</a></span>
+            </div>
+            <div class="repair_fbotB">
+                Copyright@2016-2017 好好修 京ICP备05050532号-3|增值电信业务经营许可证：京B2-20150178
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>大赛</title>
+	<link href="css/base.my.css" rel="stylesheet" />
+	<link href="css/chinawap.my.css" rel="stylesheet" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/rem.js"></script>
+	<script>
+    $(function() {
+	    //上拉加载
+	    var appendHtml = '<li>'
+			+'<a href="detail.html">'
+				+'<div class="chwap_index_title">'
+					+'<span class="chwap_trawq">往期</span>'
+					+'<span class="chwap_trawq_title">2018年数控机床操作调整工高级2018年数控机床操作调整工高级2018年数控机床操作调整工高级</div></span>'
+				+'<div class="chwap_index_img">'
+					+'<span><img src="images/tmp/tmp1.jpg" /></span>'
+					+'<span><img src="images/tmp/tmp1.jpg" /></span>'
+					+'<span><img src="images/tmp/tmp1.jpg" /></span>'
+				+'</div>'
+			+'</a>'
+			+'<div class="chwap_tralist">'
+				+'<div class="chwap_tralist_left">'
+					+'<span><a href="#">10.19-21  天津电子信息服务业首期师资培训班培训纪要</a></span>'
+					+'<span><a href="#">10.19 天津电子信息人才培养工程首期师资培训班培训纪要</a></span>'
+				+'</div>'
+				+'<span class="chwap_tralist_right">资讯</span>'
+			+'</div>'
+		+'</li>'
+	    $(document).scroll(function(){
+	        if($(document).height() - $(document).scrollTop() - window.innerHeight <10 ){
+	            console.log("加载中");
+	            $(".chwap_index ul").append(appendHtml)
+	        }
+	    });
+    }); 
+    </script>
+  
+</head>
+<body>
+<div class="chwap_ejmenu">
+	<div class="chwap_ejmenu_cont">
+		<ul>
+			<li><a href="index">推荐</a></li>
+			<li><a href="#">资讯</a></li>
+			<li><a href="standard.html">标准</a></li>
+			<li><a href="train.html">培训</a></li>
+			<li class="on"><a href="competition.html">大赛</a></li>
+			<li><a href="#">考试</a></li>
+		</ul>
+		<span class="chwap_top_right"><a href="so.html"><img src="images/icon_sowhite.png" /></a></span>
+	</div>
+</div>
+<div class="chwap_ejbanner">
+	<img src="images/banner1.jpg" />
+</div>
+<div class="chwap_comptitle">2018一带一路暨金砖国家技能发展与技术创新大赛</div>
+<div class="chwap_compmenu">
+	<span><a href="#">大赛首页</a></span>
+	<span><a href="#">新闻资讯</a></span>
+	<span><a href="#">大赛专区</a></span>
+	<span><a href="#">下载中心</a></span>
+</div>
+<div class="chwap_wqhg">
+	<div class="chwap_wqhg_title">往期回顾</div>
+	<ul>
+		<li>
+			<a href="#"><img src="images/tmp/tmp2.jpg"></a>
+		</li>
+		<li>
+			<a href="#"><img src="images/tmp/tmp3.jpg"></a>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
